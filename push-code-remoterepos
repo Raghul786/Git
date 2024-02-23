@@ -1,0 +1,23 @@
+● Create a new folder 
+● Put the following files in the folder 1. Code.txt, 2. Log.txt, 3. Output.txt 
+● Stage the Code.txt and Output.txt files 
+● Commit them 
+● And finally push them to github Please share the commands for the above points
+
+
+
+1.	Created a folder with name “allcodes” and added files within them.
+# mkdir allcodes
+# touch Code.txt Log.txt Output.txt
+2.	Stage the Code
+# cd allcodes
+# git init
+# git add Code.txt Log.txt Output.txt
+3.	Commit the code
+# git commit -m “C1”
+4.	And finally push them to github
+To do this first you have to add remote repository
+# git remote add origin https://github.com/Raghul786/Git
+Enter Username 
+Enter Access token, One you have create in github account
+# git push -u origin master
