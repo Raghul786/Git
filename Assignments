@@ -132,7 +132,25 @@ You have been asked to:
 # git checkout public1
 # echo “public1.txt” > public1.txt
 # git add public1.txt
-# git commit -m “P1”
+# git commit -m “P1”  # git checkout master
+# git merge public1
+# git merge public2
+# git branch
+# checkout private
+# echo "Modified content" >> master.txt
+# cat master.txt
+# git add master.txt
+# git commit -m "Modified"
+# git checkout public1
+# git merge private
+# git checkout public2
+# git merge private
+# git checkout master
+# git merge private
+# git checkout private
+# git merge master
+
+
 
 
 
