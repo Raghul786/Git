@@ -1,0 +1,151 @@
+Assignment 1
+● Create a new folder 
+● Put the following files in the folder 1. Code.txt, 2. Log.txt, 3. Output.txt 
+● Stage the Code.txt and Output.txt files 
+● Commit them 
+● And finally push them to github Please share the commands for the above points
+
+
+
+1.	Created a folder with name “allcodes” and added files within them.
+# mkdir allcodes
+# touch Code.txt Log.txt Output.txt
+2.	Stage the Code
+# cd allcodes
+# git init
+# git add Code.txt Log.txt Output.txt
+3.	Commit the code
+# git commit -m “C1”
+4.	And finally push them to github
+To do this first you have to add remote repository
+# git remote add origin https://github.com/Raghul786/Git
+Enter Username 
+Enter Access token, One you have create in github account
+# git push -u origin master
+https://github.com/Raghul786/Git/tree/master
+
+==================================================
+
+
+
+
+Assignment 2
+1. Create a git working directory with feature1.txt and feature2.txt in the master branch 
+
+# mkdir WorkingDirectory
+#  cd WorkingDirectory/
+#  touch feature1.txt feature2.txt
+# git add feature1.txt feature2.txt
+#git commit -m “My first commit in master branch”
+
+2 Create 3 branches develop, feature1 and feature2, in develop branch create develop.txt, do not stage or commit it. Stash this file, and checkout to feature1 branch
+
+#  git branch develop
+#  git branch feature1
+#  git branch feature2
+#  git checkout develop
+#  touch develop.txt
+#  git stash -u   (u flag is to stash untracked file)
+# git checkout feature1
+
+3 Create new.txt file in feature1 branch, stage and commit this file
+# touch new.txt
+# vim new.txt
+# git add new.txt
+# git commit -m “ Commit on feature1 branch”
+4.	Checkout to develop, unstash this file and commit
+# git stash apply
+# git add develop.txt
+# git commit -m “commit develop.txt on develop branch”
+
+
+Assignment 3
+
+● Create a git working directory, with the following branches 
+○ Develop 
+○ F1
+○ f2
+● In the master branch, commit main.txt file 
+● Put develop.txt in develop branch, f1.txt and f2.txt in f1 and f2 respectively 
+● Push all these branches to github 
+● On local delete f2 branch 
+● Delete the same branch on github as well
+
+
+# mkdir assignment
+# cd assignment
+# git init
+# echo “main.txt for because not able to create branches before commiting something” > main.txt
+Found solution 
+https://stackoverflow.com/questions/9162271/fatal-not-a-valid-object-name-master
+# git add main.txt
+# git commit -m “
+
+# git branch develop
+# git branch F1
+# git branch F2
+# git checkout develop
+# echo “this is develop.txt in the develop branch” > develop.txt
+# git add develop.txt
+# git commit -m “D1”
+# git checkout F1
+# echo “F1.text in F1 branch” >  F1.txt
+# git add F1.txt
+# git commit -m “F1”
+
+# git checkout F2
+# echo “F2.txt in F2 Branch” > F2.txt
+# git add F2.txt
+# git commit -m “F2”
+# git remote add origin https://github.com/Raghul786/Git
+# git push -u origin –all
+Enter user ID
+Access token
+You have successfully pushed 
+# git checkout master
+# git branch -d F2
+# git push origin –delete F2
+
+Assignment 4
+
+You have been asked to: 
+● Put master.txt on master branch, stage and commit
+ ● Create 3 branches: public1, public2 and private ● Put public1.txt on public 1 branch, stage and commit
+ ● Merge public 1 on master branch 
+● Merge public 2 on master branch 
+● Edit master.txt on private branch, stage and commit 
+● Now update branch public 1 and public 2 with new master code in private 
+● Also update new master code on master 
+● Finally update all the code on the private branch
+
+# mkdir brocode
+# cd brocode
+# git init
+# echo “master.txt” > master.txt
+# git add master.txt
+# git commit -m “M1”
+
+# git branch public1
+# git branch public2
+# git branch private
+
+# git checkout public1
+# echo “public1.txt” > public1.txt
+# git add public1.txt
+# git commit -m “P1”
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
