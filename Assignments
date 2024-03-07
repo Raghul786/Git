@@ -150,6 +150,60 @@ You have been asked to:
 # git checkout private
 # git merge master
 
+Git Assignment 5
+
+Create a gitflow workflow architecture on git
+● Create all the required branches
+● Starting from the feature branch, push the branch to the master, following the
+architecture
+● Push a urgent.txt on master using hotfix
+
+Git Commands
+Create a gitflow workflow architecture on git
+sudo apt-get update
+sudo apt-get install git-flow
+git flow init -d
+
+Starting from the feature branch, push the branch to the master, following the
+Architecture
+git flow feature start feature-branch
+vim bash.sh
+git add bash.sh
+git commit -m "C1 on feature branch"
+git flow feature finish feature-branch
+git checkout master
+
+Push a urgent.txt on master using hotfix
+
+git flow hotfix start hotfix-branch
+vim urgent.txt
+git add .
+
+git commit -m "C1 urgent HotFix"
+git checkout master
+git merge --no-ff hotfix/hotfix-branch
+git log
+
+
+Problem Statement:
+You work as a Devops Architect in Zendriix Softwares. The company has been struggling to
+manage their product releases. The releases should happen on 25th of every month. Suggest a
+Git Workflow Architecture for this requirement.
+Simulate this workflow, by creating a pseudo code files and branches, and upload the same to
+your GitHub Account.
+As a part of solution, share the link to your GitHub repository.
+
+mkdir Zendriix
+git init
+git add
+git commit -m "C1"
+git branch                     ( to check branches)
+git checkout -b develop
+vim Sourcecode.txt
+git add .
+git commit -m “C1 on develop branch”
+
+git checkout -b feature/new-feature
 
 
 
